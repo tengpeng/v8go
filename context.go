@@ -16,7 +16,7 @@ type Context struct {
 	ptr C.ContextPtr
 }
 
-// NewContext creates a new JavaScript context for a given isoltate;
+// NewContext creates a new JavaScript context for a given isolate;
 // if isolate is `nil` than a new isolate will be created.
 func NewContext(iso *Isolate) (*Context, error) {
 	if iso == nil {
